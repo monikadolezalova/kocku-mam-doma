@@ -117,4 +117,26 @@ if strana == "b":
     mnau.end_fill()    
     mnau.hideturtle()
     turtle.done()
-#if strana == "p":
+if strana == "p":
+    mnau.fillcolor("black")
+    mnau.begin_fill()
+    for v in range(3):
+        mnau.lt(90)
+        mnau.fd(200)
+    mnau.end_fill()
+    def ousko():
+        mnau.lt(180)
+        mnau.fd(20)
+        mnau.lt(90)
+        mnau.fd(40)
+        mnau.lt(90)
+        mnau.fd(20)
+    mnau.penup()
+    mnau.goto(0, 200)
+    mnau.pendown()
+    ousko()
+    mnau.penup()
+    mnau.goto(-160,200)
+    mnau.pendown()
+    ousko()
+    turtle.done()
